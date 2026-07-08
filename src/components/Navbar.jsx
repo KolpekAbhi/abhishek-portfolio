@@ -6,11 +6,7 @@ function Navbar({ darkMode, setDarkMode }) {
       <div className="logo">
         <span>Abhishek</span>
       </div>
-      <div className="theme-toggle">
-        <button onClick={() => setDarkMode(!darkMode)}>
-          {darkMode ? <FaSun /> : <FaMoon />}
-        </button>
-      </div>
+
       <nav>
         <ul className="nav-links">
           <li>
@@ -38,6 +34,11 @@ function Navbar({ darkMode, setDarkMode }) {
           </li>
         </ul>
       </nav>
+      <div className="theme-toggle">
+        <button onClick={() => setDarkMode(!darkMode)}>
+          {darkMode ? <FaSun /> : <FaMoon />}
+        </button>
+      </div>
     </header>
   );
 }
