@@ -1,0 +1,299 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+   LIGHT THEME (Default)
+========================== */
+
+:root {
+
+  --bg-color: #f8fafc;
+  --section-bg: #ffffff;
+  --card-bg: #ffffff;
+
+  --text-color: #111827;
+  --text-secondary: #475569;
+
+  --primary: #0ea5e9;
+  --primary-hover: #0284c7;
+
+  --border-color: #e2e8f0;
+
+  --shadow:
+      0 8px 25px rgba(0,0,0,.08);
+
+  --navbar-bg: rgba(255,255,255,.85);
+
+}
+
+/* ==========================
+   DARK THEME
+========================== */
+
+.dark{
+
+  --bg-color: #0f172a;
+
+  --section-bg: #111827;
+
+  --card-bg: #1e293b;
+
+  --text-color: #ffffff;
+
+  --text-secondary: #94a3b8;
+
+  --primary: #38bdf8;
+
+  --primary-hover: #0ea5e9;
+
+  --border-color: rgba(255,255,255,.08);
+
+  --shadow:
+      0 12px 30px rgba(56,189,248,.12);
+
+  --navbar-bg: rgba(15,23,42,.85);
+
+}
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg-color);
+
+    color:var(--text-color);
+
+    transition:.35s ease;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+   GLOBAL
+========================== */
+
+section{
+
+    padding:100px 8%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+button{
+
+    font-family:inherit;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--section-bg);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-hover);
+
+}
+
+/* ==========================
+   TITLES
+========================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+}
+
+.section-title p{
+
+    margin-top:15px;
+
+    color:var(--text-secondary);
+
+}
+
+.underline{
+
+    width:90px;
+
+    height:4px;
+
+    background:var(--primary);
+
+    margin:14px auto;
+
+    border-radius:20px;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+    border:none;
+
+}
+
+.primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.primary:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-4px);
+
+}
+
+.secondary{
+
+    border:2px solid var(--primary);
+
+    color:var(--text-color);
+
+}
+
+.secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+
+    background:var(--card-bg);
+
+    border:1px solid var(--border-color);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ==========================
+   SELECTION
+========================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+section{
+
+padding:80px 6%;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+}

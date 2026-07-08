@@ -1,0 +1,18 @@
+.app{
+    min-height:100vh;
+    transition:0.4s;
+}
+
+/* Dark Theme */
+
+.dark{
+    background:#0f172a;
+    color:white;
+}
+
+/* Light Theme */
+
+.light{
+    background:#f8fafc;
+    color:#111827;
+}
