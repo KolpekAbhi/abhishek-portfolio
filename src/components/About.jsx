@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 function About() {
   return (
     <motion.section
-    className="about"
-    id="about"
-    initial={{ opacity: 0, y: 80 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.8 }}
->
+      className="about"
+      id="about"
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="section-title">
         <h2>About Me</h2>
         <div className="underline"></div>
@@ -88,7 +88,7 @@ function About() {
           </div>
         </div>
       </div>
-      </motion.section>
+    </motion.section>
   );
 }
 
